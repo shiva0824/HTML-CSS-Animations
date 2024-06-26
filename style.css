@@ -1,0 +1,74 @@
+html,body{
+    background: gray;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: cursive;
+    text-align: center;
+    animation: text 5s ease forwards;
+}
+
+p{
+    font-size: 20px;
+    font-family: cursive;
+    margin-bottom: 0;
+    animation: footer 20s both linear;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: space-between;   
+    animation: start 5s ease forwards;
+}
+
+.main div a img{
+     height: 250px;
+     width: 300px;
+     border-radius: 10px;
+ }
+
+.animation{
+    text-align: center;
+    cursor: pointer;
+}
+
+
+@keyframes start{
+    0%{transform: translateY(-400px);}
+    50%{transform: translateY(50px);}
+    100%{ transform: translateY(0);}
+  }
+
+@keyframes text{
+    0%{transform: translateY(-70px);}
+    50%{transform: translateY(30px);}
+    100%{ transform: translateY(0);}
+  }
+
+@keyframes footer{
+    from{transform: translateX(-300px)}
+    to{transform: translateX(600px);}
+  }
+
+
+@media (max-width: 600px){
+    p{
+      text-align: center;
+      animation: none;
+    }
+  }
+
+  @media(min-width:600px) and (max-width:1400px){
+    p{
+        text-align: center;
+        animation: none;
+      }
+  }
